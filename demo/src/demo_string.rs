@@ -1,12 +1,17 @@
 pub fn run() {
-    let name = give_ownership();
-    println!("{name}");
+    let name = "Foo".to_string();
+    take_ownership(name);
+    //let name = give_ownership();
+    //println!("{name}");
 }
 
 fn give_ownership() -> String {
     "Foo".to_string()
 }
 
+fn take_ownership(mut name: String) {
+    name.push_str(" and bar");
+}
 
 // pub fn run() {
 //     let fname = "Foo".to_string();
