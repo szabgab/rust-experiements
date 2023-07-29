@@ -15,7 +15,7 @@ fn say_hello(name: &str) {
 
 fn combine(fname: &str, lname: &str) -> String {
     //format!("{fname} {lname}")
-    (fname + " " + lname).to_string()
+    fname.to_string() + " " + lname
 }
 
 
