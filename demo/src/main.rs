@@ -10,16 +10,16 @@ fn main() {
 #[derive(Debug)]
 #[allow(dead_code)]
 struct Color {
-    mut red: u8,
+    red: u8,
     green: u8,
     blue: u8,
     name: String,
 }
 
 fn run() {
-    mut red = Color {red: 255, green: 0, blue: 0, name: "red".to_string()};
-    dbg!(red);
-    //red.red = 200;
-    dbg!(red);
+    let mut red = Color {red: 255, green: 0, blue: 0, name: "red".to_string()};
+    dbg!(&red);
+    red.red = 200;
+    dbg!(&red);
 }
 
