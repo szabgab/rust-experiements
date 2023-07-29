@@ -27,9 +27,10 @@ fn run() {
     // blue.blue = 250;
     // dbg!(&blue);
 
-    let mut colors = get_colors();
+    let colors = get_colors();
     dbg!(&colors);
-    &colors[0].blue = 255;
+    let colors = colors.into_iter().map(|color| { color.blue = 255; color}).collect();
+    //&colors[0].blue = 255;
     dbg!(&colors[0]);
 }
 
