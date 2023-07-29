@@ -15,4 +15,4 @@ mod other1 {
 
 mod other2;
 use other2::say_hello;
-use demo_str;
+mod demo_str;
