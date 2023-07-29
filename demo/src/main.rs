@@ -10,6 +10,7 @@ fn main() {
 #[derive(Debug)]
 #[allow(dead_code)]
 struct Color {
+    x: &'a str,
     red: u8,
     green: u8,
     blue: u8,
