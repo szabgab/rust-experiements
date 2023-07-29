@@ -6,6 +6,7 @@ fn main() {
     dbg!(var1);
     other1::run_this();
     other2::say_hello();
+    say_hello();
 }
 
 fn pass_str(name :&str) {
@@ -19,3 +20,4 @@ mod other1 {
 }
 
 mod other2;
+use other2::say_hello;
