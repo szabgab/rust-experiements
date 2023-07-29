@@ -30,7 +30,8 @@ fn borrow(name: &String) {
 // we have a variable and we pass it to a function
 // 1. we don't want to change the variable in the function
 // 2. we want to change it and the change should not impact the variable before the function call
-// 3. we want to change it and we want the change to impact the external variable - this is not a
+// 3. we want to change it and we want the change to impact the external variable - this generally not a good idea, but what if we have a list of structs and we would like to update them?
+
 
 
 
