@@ -26,8 +26,11 @@ fn borrow(name: &String) {
     println!("{name}");
 }
 
-//cases
+// cases
 // we have a variable and we pass it to a function
+// 1. we don't want to change the variable in the function
+// 2. we want to change it, and the change should not impact the variable before the function call
+// 3. 
 
 
 
