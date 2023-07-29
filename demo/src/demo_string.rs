@@ -7,6 +7,8 @@ pub fn run() {
     // println!("This is {name}");
     let res = combine(&fname, &lname);
     println!("Combined name {res}");
+    println!("{fname}");
+    println!("{lname}");
 }
 fn say_hello(name: &str) {
     println!("Hello {name}");
