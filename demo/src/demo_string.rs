@@ -1,8 +1,9 @@
 pub fn run() {
-    let name = "Foo".to_string();
+    let mut name = "Foo".to_string();
     println!("{name}");
-    let other = &name;
-    println!("{other}");
+    //let other = &name;
+    name.push_str(" Bar");
+    //println!("{other}");
     println!("{name}");
 
     // say_hello(&name);
