@@ -27,13 +27,15 @@ fn run() {
     // blue.blue = 250;
     // dbg!(&blue);
 
-    let colors = get_colors();
+    let mut colors = get_colors();
     dbg!(&colors);
+    &colors[0].blue = 255;
+    dbg!(&colors[0]);
 }
 
-fn get_blue() -> Color {
-    Color {red: 0, green: 0, blue: 255, name: "blue".to_string()}
-}
+// fn get_blue() -> Color {
+//     Color {red: 0, green: 0, blue: 255, name: "blue".to_string()}
+// }
 
 fn get_colors() -> Vec<Color> {
     let colors = vec![
