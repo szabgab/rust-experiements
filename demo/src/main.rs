@@ -1,4 +1,4 @@
-mod demo_str;
+//mod demo_str;
 fn main() {
     println!("Hello World");
     //demo_str::run();
