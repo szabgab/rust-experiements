@@ -1,13 +1,8 @@
 //mod demo_str;
+mod demo_string;
 fn main() {
-    println!("Hello World");
+    //println!("Hello World");
     //demo_str::run();
-
-    // other2::say_hello();
-    // say_hello();
+    demo_string::run();
 }
 
-
-
-// mod other2;
-// use other2::say_hello;

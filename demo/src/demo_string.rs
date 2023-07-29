@@ -1,6 +1,7 @@
 pub fn run() {
-    say_hello();
+    let name = "Foo".to_string();
+    say_hello(name);
 }
-fn say_hello() {
-    dbg!("other2 run_this");
+fn say_hello(name: String) {
+    println!("Hello {name}");
 }
