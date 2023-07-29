@@ -1,12 +1,12 @@
 pub fn run() {
     let name = "Foo".to_string();
     println!("{name}");
-    take_ownership(name);
-    println!("{name}");
+    borrow(&name);
+    println!("{name}"); // take_ownership moved the owner
 
 }
 
-fn take_ownership(name: String) {
+fn borrow(name: &str) {
     println!("in function: {name}");
 }
 
