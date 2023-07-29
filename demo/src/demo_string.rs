@@ -26,6 +26,11 @@ fn borrow(name: &String) {
     println!("{name}");
 }
 
+//cases
+// we have a variable and we pass it to a function
+
+
+
 // pub fn run() {
 //     let fname = "Foo".to_string();
 //     let lname = "Bar".to_string();
