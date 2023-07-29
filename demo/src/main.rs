@@ -7,6 +7,8 @@ fn main() {
     run();
 }
 
+#[derive(Debug)]
+#[allow(dead_code)]
 struct Color {
     red: u8,
     green: u8,
