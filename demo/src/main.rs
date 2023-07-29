@@ -29,9 +29,10 @@ fn run() {
 
     let colors = get_colors();
     dbg!(&colors);
-    let colors = colors.into_iter().map(|color| { color.blue = 255; color}).collect();
-    //&colors[0].blue = 255;
     dbg!(&colors[0]);
+    let colors :Vec<Color> = colors.into_iter().map(|mut color| { if color.name == "blue" { color.blue = 200 }; color}).collect();
+    //&colors[0].blue = 255;
+    dbg!(&colors);
 }
 
 // fn get_blue() -> Color {
