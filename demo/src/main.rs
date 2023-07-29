@@ -1,14 +1,14 @@
 fn main() {
-    run("Foo");
+    pass_str("Foo");
 
     let var1 = "Bar";
-    run(var1);
+    pass_str(var1);
     dbg!(var1);
     other1::run_this();
-    other2::run_this();
+    other2::say_hello();
 }
 
-fn run(name :&str) {
+fn pass_str(name :&str) {
     dbg!(name);
 }
 
@@ -18,8 +18,4 @@ mod other1 {
     }
 }
 
-mod other2 {
-    pub fn run_this() {
-        dbg!("other2 run_this");
-    }
-}
+mod other2;
