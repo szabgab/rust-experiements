@@ -1,14 +1,22 @@
 pub fn run() {
-    let name = "Foo".to_string();
-    println!("{name}");
-    say_hello(&name);
+    let fname = "Foo".to_string();
+    let lname = "Bar".to_string();
+    println!("{fname}");
+    println!("{lname}");
+    say_hello(&fname);
     // println!("This is {name}");
+    let res = combine(&fname, &lname);
+    println!("Combined name {res}");
 }
 fn say_hello(name: &str) {
     println!("Hello {name}");
     println!("Hello {name}");
 }
 
+fn combine(fname: &str, lname: &str) -> String {
+    //format!("{fname} {lname}")
+    (fname + " " + lname).to_string()
+}
 
 
 // let mut name = "Foo".to_string();
