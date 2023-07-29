@@ -14,8 +14,8 @@ fn take_ownership(mut name: String) {
     name.push_str(" and bar");
 }
 
-fn borrow(mut name: &String) {
-    name.push_str(" and bar");
+fn borrow(name: &String) {
+    ..name.push_str(" and bar");
 }
 
 // pub fn run() {
