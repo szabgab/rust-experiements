@@ -1,8 +1,9 @@
 pub fn run() {
     let name = "Foo".to_string();
-    take_ownership(name);
+    //take_ownership(name);
+    borrow(&name);
     //let name = give_ownership();
-    //println!("{name}");
+    println!("{name}");
 }
 
 fn give_ownership() -> String {
@@ -10,6 +11,10 @@ fn give_ownership() -> String {
 }
 
 fn take_ownership(mut name: String) {
+    name.push_str(" and bar");
+}
+
+fn borrow(mut name: &String) {
     name.push_str(" and bar");
 }
 
