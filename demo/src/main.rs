@@ -19,7 +19,15 @@ struct Color {
 fn run() {
     let mut red = Color {red: 255, green: 0, blue: 0, name: "red".to_string()};
     dbg!(&red);
-    red.red = 200;
+    red.red = 250;
     dbg!(&red);
+
+    let mut blue = get_blue();
+    dbg!(&blue);
+    blue.blue = 250;
+    dbg!(&blue);
 }
 
+fn get_blue() -> Color {
+    Color {red: 0, green: 0, blue: 255, name: "blue".to_string()}
+}
