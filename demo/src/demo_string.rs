@@ -1,12 +1,12 @@
 pub fn run() {
     let mut name = "Foo".to_string();
     println!("{name}");
-    let other = &name;
+    //let other = &name;
     let lname = "Bar".to_string();
-    name.push_str(&lname);
-    println!("{other}");
+    let x = &name.push_str(&lname);
+    //println!("{other}");
     println!("{name}");
-
+    println!("{:?}",x );
     // say_hello(&name);
     // println!("This is {name}");
 }
