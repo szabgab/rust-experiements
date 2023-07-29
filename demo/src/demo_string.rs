@@ -1,8 +1,13 @@
 pub fn run() {
     let name = "Foo".to_string();
     println!("{name}");
-    //take_ownership(name);
+    take_ownership(name);
+    println!("{name}");
 
+}
+
+fn take_ownership(name: String) {
+    println!("in function: {name}");
 }
 
 
