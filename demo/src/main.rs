@@ -12,7 +12,17 @@ fn main() {
     //demo_string::run();
     //run();
 
-    let grap
+    let graph = get_graph();
+    dbg!(&graph);
+}
+
+fn get_graph() -> Vec<Point> {
+    vec![
+        Point {x: 0, y: 0},
+        Point {x: 10, y: 20},
+        Point {x: 30, y: 40},
+    ]
+
 }
 
 
