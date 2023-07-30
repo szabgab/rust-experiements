@@ -5,7 +5,6 @@ pub fn run() {
     //immutable_take_ownership(name);
     //mutable_take_ownership(name);
     //immutable_borrow(&name);
-    mutable_borrow(name);
     //let name = give_ownership();
     println!("{name}");
 }
@@ -30,10 +29,12 @@ fn immutable_borrow(name: &String) {
     println!("{name}");
 }
 
-fn mutable_borrow(mut name: &String) {
-    name.push_str(" bar");
-    println!("{name}");
-}
+// Cannot borrow variable (for the push_str) that is behind a & - reference
+// fn mutable_borrow(mut name: &String) {
+//     name.push_str(" bar");
+//     println!("{name}");
+// }
+
 
 // cases
 // we have a variable and we pass it to a function
