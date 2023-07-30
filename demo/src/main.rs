@@ -6,7 +6,7 @@ fn main() {
     a.x = 10;
     dbg!(&a);
     mutable_take_ownership(a);
-
+    dbg!(&a);
     //println!("Hello World");
     //demo_str::run();
     //demo_string::run();
