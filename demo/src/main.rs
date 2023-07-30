@@ -1,32 +1,12 @@
 //mod demo_str;
 //mod demo_string;
 fn main() {
-    // let mut a = Point {x: 0, y: 0};
-    // dbg!(&a);
-    // a.x = 10;
-    // dbg!(&a);
-    // mutable_take_ownership(a);
-    // dbg!(&a);
     //println!("Hello World");
     //demo_str::run();
     //demo_string::run();
     //run();
 }
 
-
-#[derive(Debug)]
-#[allow(dead_code)]
-struct Point {
-    x: i32,
-    y: i32,
-}
-
-fn mutable_take_ownership(mut a: Point) {
-    dbg!(&a);
-    a.x += 100;
-    a.y += 100;
-    dbg!(&a);
-}
 
 // #[derive(Debug)]
 // #[allow(dead_code)]
