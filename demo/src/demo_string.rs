@@ -1,33 +1,33 @@
-pub fn run() {
-    let mut name = "Foo".to_string();
-    name.push_str(" and");
-    println!("{name}");
-    //immutable_take_ownership(name);
-    //mutable_take_ownership(name);
-    //immutable_borrow(&name);
-    //let name = give_ownership();
-    println!("{name}");
-}
+// pub fn run() {
+//     let mut name = "Foo".to_string();
+//     name.push_str(" and");
+//     println!("{name}");
+//     //immutable_take_ownership(name);
+//     //mutable_take_ownership(name);
+//     //immutable_borrow(&name);
+//     //let name = give_ownership();
+//     println!("{name}");
+// }
 
-fn give_ownership() -> String {
-    "Foo".to_string()
-}
+// fn give_ownership() -> String {
+//     "Foo".to_string()
+// }
 
-fn immutable_take_ownership(name: String) {
-    println!("{name}");
-    //name.push_str(" and bar");
-}
+// fn immutable_take_ownership(name: String) {
+//     println!("{name}");
+//     //name.push_str(" and bar");
+// }
 
-fn mutable_take_ownership(mut name: String) {
-    name.push_str(" bar");
-    println!("{name}");
+// fn mutable_take_ownership(mut name: String) {
+//     name.push_str(" bar");
+//     println!("{name}");
 
-}
+// }
 
-fn immutable_borrow(name: &String) {
-    //name.push_str(" and bar");
-    println!("{name}");
-}
+// fn immutable_borrow(name: &String) {
+//     //name.push_str(" and bar");
+//     println!("{name}");
+// }
 
 // Cannot borrow variable (for the push_str) that is behind a & - reference
 // fn mutable_borrow(mut name: &String) {
