@@ -1,8 +1,11 @@
 //mod demo_str;
 //mod demo_string;
 fn main() {
-    let a = Point {x: 0, y: 0};
-    dbg!
+    let mut a = Point {x: 0, y: 0};
+    dbg!(&a);
+    a.x = 10;
+    dbg!(&a);
+    
 
     //println!("Hello World");
     //demo_str::run();
@@ -11,6 +14,8 @@ fn main() {
 }
 
 
+#[derive(Debug)]
+#[allow(dead_code)]
 struct Point {
     x: i32,
     y: i32,
