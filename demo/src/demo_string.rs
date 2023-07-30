@@ -1,6 +1,9 @@
 pub fn run() {
-    let name = "Foo".to_string();
-    immutable_take_ownership(name);
+    let mut name = "Foo".to_string();
+    name.push_str(" and");
+    println!("{name}");
+    //immutable_take_ownership(name);
+    mutable_take_ownership(name);
     //borrow(&name);
     //let name = give_ownership();
     println!("{name}");
@@ -16,7 +19,7 @@ fn immutable_take_ownership(name: String) {
 }
 
 fn mutable_take_ownership(mut name: String) {
-    name.push_str(" and bar");
+    name.push_str(" bar");
     println!("{name}");
 
 }
