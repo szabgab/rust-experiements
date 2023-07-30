@@ -3,8 +3,9 @@ pub fn run() {
     name.push_str(" and");
     println!("{name}");
     //immutable_take_ownership(name);
-    mutable_take_ownership(name);
-    //borrow(&name);
+    //mutable_take_ownership(name);
+    //immutable_borrow(&name);
+    mutable_borrow(name);
     //let name = give_ownership();
     println!("{name}");
 }
@@ -24,8 +25,13 @@ fn mutable_take_ownership(mut name: String) {
 
 }
 
-fn borrow(name: &String) {
+fn immutable_borrow(name: &String) {
     //name.push_str(" and bar");
+    println!("{name}");
+}
+
+fn mutable_borrow(mut name: &String) {
+    name.push_str(" bar");
     println!("{name}");
 }
 
