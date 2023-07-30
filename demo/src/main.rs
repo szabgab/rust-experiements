@@ -17,12 +17,15 @@ fn main() {
     // move_graph(&mut graph);
     // dbg!(&graph);
 
-    let joe = Person {name: "Joe".to_string()};
+    let joe = Person {name: "Joe".to_string(), phone: None};
     dbg!(&joe);
 }
 
-struct Person {
+#[derive(Debug)]
+#[allow(dead_code)]
+struct Person<'a> {
     name: String,
+    phone: Option<&'a Person>,
 }
 
 
