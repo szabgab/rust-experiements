@@ -5,7 +5,7 @@ fn main() {
     dbg!(&a);
     a.x = 10;
     dbg!(&a);
-    
+    mutable_take_ownership(a);
 
     //println!("Hello World");
     //demo_str::run();
@@ -21,6 +21,12 @@ struct Point {
     y: i32,
 }
 
+fn mutable_take_ownership(mut a: Point) {
+    dbg!(&a);
+    a.x += 100;
+    a.y += 100;
+    dbg!(&a);
+}
 
 // #[derive(Debug)]
 // #[allow(dead_code)]
