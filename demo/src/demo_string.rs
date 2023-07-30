@@ -5,9 +5,9 @@ pub fn run() {
     //immutable_take_ownership(name);
     //mutable_take_ownership(name);
     //immutable_borrow(&name);
-    mutable_borrow(&name);
+    mutable_borrow(&mut name);
     //let name = give_ownership();
-    println!("{name}");
+    println!("after: {name}");
 }
 
 // fn give_ownership() -> String {
