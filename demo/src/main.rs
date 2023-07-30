@@ -12,7 +12,9 @@ fn main() {
     //demo_string::run();
     //run();
 
-    let graph = get_graph();
+    let mut graph = get_graph();
+    dbg!(&graph);
+    move_graph(&mut graph);
     dbg!(&graph);
 }
 
@@ -23,6 +25,12 @@ fn get_graph() -> Vec<Point> {
         Point {x: 30, y: 40},
     ]
 
+}
+
+fn move_graph(graph: &mut Vec<Point>) {
+    for point in graph {
+        point.x += 100;
+    }
 }
 
 
