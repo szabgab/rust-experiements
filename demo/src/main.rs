@@ -12,11 +12,19 @@ fn main() {
     //demo_string::run();
     //run();
 
-    let mut graph = get_graph();
-    dbg!(&graph);
-    move_graph(&mut graph);
-    dbg!(&graph);
+    // let mut graph = get_graph();
+    // dbg!(&graph);
+    // move_graph(&mut graph);
+    // dbg!(&graph);
+
+    let joe = Person {name: "Joe".to_string()};
+    dbg!(&joe);
 }
+
+struct Person {
+    name: String,
+}
+
 
 fn get_graph() -> Vec<Point> {
     vec![
