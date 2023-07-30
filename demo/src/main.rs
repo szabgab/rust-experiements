@@ -1,15 +1,15 @@
 //mod demo_str;
-//mod demo_string;
+mod demo_string;
 fn main() {
-    let mut a = Point {x: 0, y: 0};
-    dbg!(&a);
-    a.x = 10;
-    dbg!(&a);
-    mutable_take_ownership(a);
-    dbg!(&a);
+    // let mut a = Point {x: 0, y: 0};
+    // dbg!(&a);
+    // a.x = 10;
+    // dbg!(&a);
+    // mutable_take_ownership(a);
+    // dbg!(&a);
     //println!("Hello World");
     //demo_str::run();
-    //demo_string::run();
+    demo_string::run();
     //run();
 }
 
