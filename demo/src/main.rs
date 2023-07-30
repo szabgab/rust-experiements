@@ -1,5 +1,5 @@
 //mod demo_str;
-mod demo_string;
+//mod demo_string;
 fn main() {
     // let mut a = Point {x: 0, y: 0};
     // dbg!(&a);
@@ -9,8 +9,10 @@ fn main() {
     // dbg!(&a);
     //println!("Hello World");
     //demo_str::run();
-    demo_string::run();
+    //demo_string::run();
     //run();
+
+    let grap
 }
 
 
